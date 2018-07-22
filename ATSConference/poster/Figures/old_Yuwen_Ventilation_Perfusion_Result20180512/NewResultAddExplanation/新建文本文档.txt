@@ -1,0 +1,17 @@
+Normal
+Alveolar ventilation: 2.292L/min
+Cardiac output: 2.758L/min
+Dead space: 87.1ml
+Tidal vollume:0.23L
+
+CT based
+Alveolar ventilation: 1.953L/min
+Cardiac output: 2.766L/min
+Dead space: 99.80ml
+Tidal vollume:0.23L
+
+Model based
+Alveolar ventilation: 1.953L/min
+Cardiac output: 2.7143L/min
+Dead space: 99.80ml
+Tidal vollume:0.23L

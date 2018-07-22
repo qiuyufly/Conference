@@ -1,0 +1,8 @@
+lung segmentation result
+误差距离图
+interface操控界面
+correction界面
+PCA transformation图
+vessel分割方法
+
+SubjectInfo

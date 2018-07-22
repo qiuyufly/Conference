@@ -1,0 +1,2 @@
+Ventilation: use original disease airway geometry and parameters, use deep inspiration to set a lower compliance, but the distribution is normal
+Perfusion: use original disease airway geometry and parameters, reduce the radius of vs height disease branches
