@@ -2,10 +2,11 @@ Author Name and Address
 Yuwen Zhang :yzha947@aucklanduni.ac.nz
 Alys Clark: alys.clark@auckland.ac.nz
 Haribalan Kumar: hkmu551@aucklanduni.ac.nz 
-David Milne: dmilne@auckland.ac.nz
+David Milne: DMilne@adhb.govt.nz
 Margaret Wilsher: mwilsher@adhb.govt.nz
 Brian Bartholmai: Bartholmai.Brian@mayo.edu
 Merryn Tawhai: m.tawhai@auckland.ac.nz
+Eric A. Hoffman: eric-hoffman@uiowa.edu
 
 Institue
 1 Auckland Bioengineering Institute, University of Auckland, Auckland, NZ

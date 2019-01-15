@@ -1,0 +1,10 @@
+\BOOKMARK [1][-]{section.1}{INTRODUCTION}{}% 1
+\BOOKMARK [1][-]{section.2}{METHOD}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Lung segmentation}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Statistical finite element models of lung and fissure shape}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Initial prediction of lobar location in an individual}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Multi-scale Hessian-based fissure detection}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{RESULTS}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Testing CT dataset}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Test and results}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{DISCUSSION AND CONCULSION}{}% 10
