@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.13)  15 JAN 2019 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.12.13)  18 JAN 2019 17:02
 entering extended mode
 **./SPIEPaper_Yuwen.tex
 (SPIEPaper_Yuwen.tex
@@ -257,11 +257,7 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
 \subfig@top=\skip53
 \subfig@bottom=\skip54
-) (SPIEPaper_Yuwen.aux
-
-LaTeX Warning: Label `fig:FissureDetection' multiply defined.
-
-)
+) (SPIEPaper_Yuwen.aux)
 \openout1 = `SPIEPaper_Yuwen.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -278,7 +274,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count118
 \scratchdimen=\dimen120
@@ -346,26 +343,8 @@ File: Image/WholeWorkflow.jpg Graphic file (type jpg)
 <use Image/WholeWorkflow.jpg>
 Package pdftex.def Info: Image/WholeWorkflow.jpg  used on input line 57.
 (pdftex.def)             Requested size: 434.79243pt x 195.12877pt.
-<Image/LungSegmentationBefore.png, id=95, 575.14874pt x 383.93437pt>
-File: Image/LungSegmentationBefore.png Graphic file (type png)
-<use Image/LungSegmentationBefore.png>
-Package pdftex.def Info: Image/LungSegmentationBefore.png  used on input line 76.
-(pdftex.def)             Requested size: 575.14734pt x 383.93343pt.
-File: Image/LungSegmentationBefore.png Graphic file (type png)
-<use Image/LungSegmentationBefore.png>
-Package pdftex.def Info: Image/LungSegmentationBefore.png  used on input line 76.
-(pdftex.def)             Requested size: 146.34824pt x 97.69398pt.
-<Image/LungSegmentationAfter.png, id=98, 578.16pt x 391.4625pt>
-File: Image/LungSegmentationAfter.png Graphic file (type png)
-<use Image/LungSegmentationAfter.png>
-Package pdftex.def Info: Image/LungSegmentationAfter.png  used on input line 85.
-(pdftex.def)             Requested size: 578.15858pt x 391.46153pt.
-File: Image/LungSegmentationAfter.png Graphic file (type png)
-<use Image/LungSegmentationAfter.png>
-Package pdftex.def Info: Image/LungSegmentationAfter.png  used on input line 85.
-(pdftex.def)             Requested size: 146.34824pt x 99.08989pt.
- [302] [303 <./Image/LungSegmentationBefore.png> <./Image/LungSegmentationAfter.png> <./Image/WholeWorkflow.jpg>] [304]
-<Image/LobeFitting2.png, id=142, 370.986pt x 522.753pt>
+ [302] [303 <./Image/WholeWorkflow.jpg>]
+<Image/LobeFitting2.png, id=119, 370.986pt x 522.753pt>
 File: Image/LobeFitting2.png Graphic file (type png)
 <use Image/LobeFitting2.png>
 Package pdftex.def Info: Image/LobeFitting2.png  used on input line 164.
@@ -374,7 +353,7 @@ File: Image/LobeFitting2.png Graphic file (type png)
 <use Image/LobeFitting2.png>
 Package pdftex.def Info: Image/LobeFitting2.png  used on input line 164.
 (pdftex.def)             Requested size: 87.80447pt x 123.72438pt.
-<Image/ProcrustedMeshes.png, id=144, 522.2712pt x 538.1706pt>
+<Image/ProcrustedMeshes.png, id=122, 522.2712pt x 538.1706pt>
 File: Image/ProcrustedMeshes.png Graphic file (type png)
 <use Image/ProcrustedMeshes.png>
 Package pdftex.def Info: Image/ProcrustedMeshes.png  used on input line 175.
@@ -383,7 +362,7 @@ File: Image/ProcrustedMeshes.png Graphic file (type png)
 <use Image/ProcrustedMeshes.png>
 Package pdftex.def Info: Image/ProcrustedMeshes.png  used on input line 175.
 (pdftex.def)             Requested size: 126.83116pt x 130.69098pt.
-<Image/ProjectedLeftFissureMesh.png, id=146, 378.6948pt x 542.025pt>
+<Image/ProjectedLeftFissureMesh.png, id=124, 378.6948pt x 542.025pt>
 File: Image/ProjectedLeftFissureMesh.png Graphic file (type png)
 <use Image/ProjectedLeftFissureMesh.png>
 Package pdftex.def Info: Image/ProjectedLeftFissureMesh.png  used on input line 184.
@@ -392,7 +371,7 @@ File: Image/ProjectedLeftFissureMesh.png Graphic file (type png)
 <use Image/ProjectedLeftFissureMesh.png>
 Package pdftex.def Info: Image/ProjectedLeftFissureMesh.png  used on input line 184.
 (pdftex.def)             Requested size: 87.80447pt x 125.67213pt.
-<Image/ProjectedRightFissureMesh.png, id=148, 416.2752pt x 542.025pt>
+<Image/ProjectedRightFissureMesh.png, id=126, 416.2752pt x 542.025pt>
 File: Image/ProjectedRightFissureMesh.png Graphic file (type png)
 <use Image/ProjectedRightFissureMesh.png>
 Package pdftex.def Info: Image/ProjectedRightFissureMesh.png  used on input line 195.
@@ -401,205 +380,79 @@ File: Image/ProjectedRightFissureMesh.png Graphic file (type png)
 <use Image/ProjectedRightFissureMesh.png>
 Package pdftex.def Info: Image/ProjectedRightFissureMesh.png  used on input line 195.
 (pdftex.def)             Requested size: 97.563pt x 127.02852pt.
- [305 <./Image/LobeFitting2.png> <./Image/ProcrustedMeshes.png> <./Image/ProjectedLeftFissureMesh.png> <./Image/Projecte
-dRightFissureMesh.png>]
-<Image/FissureDetection1.jpg, id=177, 237.0456pt x 148.8762pt>
-File: Image/FissureDetection1.jpg Graphic file (type jpg)
-<use Image/FissureDetection1.jpg>
-Package pdftex.def Info: Image/FissureDetection1.jpg  used on input line 259.
-(pdftex.def)             Requested size: 237.045pt x 148.87584pt.
-File: Image/FissureDetection1.jpg Graphic file (type jpg)
-<use Image/FissureDetection1.jpg>
-Package pdftex.def Info: Image/FissureDetection1.jpg  used on input line 259.
-(pdftex.def)             Requested size: 143.90674pt x 90.385pt.
-<Image/FissureDetection2.jpg, id=179, 239.9364pt x 154.6578pt>
-File: Image/FissureDetection2.jpg Graphic file (type jpg)
-<use Image/FissureDetection2.jpg>
-Package pdftex.def Info: Image/FissureDetection2.jpg  used on input line 268.
-(pdftex.def)             Requested size: 239.9358pt x 154.65741pt.
-File: Image/FissureDetection2.jpg Graphic file (type jpg)
-<use Image/FissureDetection2.jpg>
-Package pdftex.def Info: Image/FissureDetection2.jpg  used on input line 268.
-(pdftex.def)             Requested size: 140.49013pt x 90.56058pt.
-<Image/FissureDetection3.jpg, id=181, 242.8272pt x 156.585pt>
-File: Image/FissureDetection3.jpg Graphic file (type jpg)
-<use Image/FissureDetection3.jpg>
-Package pdftex.def Info: Image/FissureDetection3.jpg  used on input line 277.
-(pdftex.def)             Requested size: 242.8266pt x 156.58461pt.
-File: Image/FissureDetection3.jpg Graphic file (type jpg)
-<use Image/FissureDetection3.jpg>
-Package pdftex.def Info: Image/FissureDetection3.jpg  used on input line 277.
-(pdftex.def)             Requested size: 140.49013pt x 90.59715pt.
-<Image/FissureDetection4.jpg, id=183, 249.0906pt x 154.6578pt>
-File: Image/FissureDetection4.jpg Graphic file (type jpg)
-<use Image/FissureDetection4.jpg>
-Package pdftex.def Info: Image/FissureDetection4.jpg  used on input line 286.
-(pdftex.def)             Requested size: 249.08998pt x 154.65741pt.
-File: Image/FissureDetection4.jpg Graphic file (type jpg)
-<use Image/FissureDetection4.jpg>
-Package pdftex.def Info: Image/FissureDetection4.jpg  used on input line 286.
-(pdftex.def)             Requested size: 140.0063pt x 86.93106pt.
-<Image/FissureDetection5.jpg, id=185, 298.716pt x 175.857pt>
-File: Image/FissureDetection5.jpg Graphic file (type jpg)
-<use Image/FissureDetection5.jpg>
-Package pdftex.def Info: Image/FissureDetection5.jpg  used on input line 295.
-(pdftex.def)             Requested size: 298.71526pt x 175.85657pt.
-File: Image/FissureDetection5.jpg Graphic file (type jpg)
-<use Image/FissureDetection5.jpg>
-Package pdftex.def Info: Image/FissureDetection5.jpg  used on input line 295.
-(pdftex.def)             Requested size: 146.34824pt x 86.15994pt.
-<Image/FissureDetection6.jpg, id=187, 290.5254pt x 170.0754pt>
-File: Image/FissureDetection6.jpg Graphic file (type jpg)
-<use Image/FissureDetection6.jpg>
-Package pdftex.def Info: Image/FissureDetection6.jpg  used on input line 304.
-(pdftex.def)             Requested size: 290.52469pt x 170.07497pt.
-File: Image/FissureDetection6.jpg Graphic file (type jpg)
-<use Image/FissureDetection6.jpg>
-Package pdftex.def Info: Image/FissureDetection6.jpg  used on input line 304.
-(pdftex.def)             Requested size: 148.78229pt x 87.10062pt.
- [306]
-<Image/H1335_FRC_Raw_Sagittal.png, id=207, 313.6518pt x 455.301pt>
-File: Image/H1335_FRC_Raw_Sagittal.png Graphic file (type png)
-<use Image/H1335_FRC_Raw_Sagittal.png>
-Package pdftex.def Info: Image/H1335_FRC_Raw_Sagittal.png  used on input line 328.
-(pdftex.def)             Requested size: 313.65102pt x 455.29988pt.
-File: Image/H1335_FRC_Raw_Sagittal.png Graphic file (type png)
-<use Image/H1335_FRC_Raw_Sagittal.png>
-Package pdftex.def Info: Image/H1335_FRC_Raw_Sagittal.png  used on input line 328.
-(pdftex.def)             Requested size: 73.1704pt x 106.2107pt.
-<Image/H1335_FRC_PCAInitial_Sagittal.png, id=209, 317.988pt x 456.7464pt>
-File: Image/H1335_FRC_PCAInitial_Sagittal.png Graphic file (type png)
-<use Image/H1335_FRC_PCAInitial_Sagittal.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAInitial_Sagittal.png  used on input line 339.
-(pdftex.def)             Requested size: 317.98721pt x 456.74529pt.
-File: Image/H1335_FRC_PCAInitial_Sagittal.png Graphic file (type png)
-<use Image/H1335_FRC_PCAInitial_Sagittal.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAInitial_Sagittal.png  used on input line 339.
-(pdftex.def)             Requested size: 73.1704pt x 105.09824pt.
-<Image/H1335_FRC_PCAFissureDetection_Sagittal.png, id=211, 318.9516pt x 458.1918pt>
-File: Image/H1335_FRC_PCAFissureDetection_Sagittal.png Graphic file (type png)
-<use Image/H1335_FRC_PCAFissureDetection_Sagittal.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAFissureDetection_Sagittal.png  used on input line 350.
-(pdftex.def)             Requested size: 318.9508pt x 458.19069pt.
-File: Image/H1335_FRC_PCAFissureDetection_Sagittal.png Graphic file (type png)
-<use Image/H1335_FRC_PCAFissureDetection_Sagittal.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAFissureDetection_Sagittal.png  used on input line 350.
-(pdftex.def)             Requested size: 73.1704pt x 105.10922pt.
-<Image/H1335_FRC_Raw_Axial.png, id=213, 615.7404pt x 406.1574pt>
-File: Image/H1335_FRC_Raw_Axial.png Graphic file (type png)
-<use Image/H1335_FRC_Raw_Axial.png>
-Package pdftex.def Info: Image/H1335_FRC_Raw_Axial.png  used on input line 361.
-(pdftex.def)             Requested size: 615.73889pt x 406.1564pt.
-File: Image/H1335_FRC_Raw_Axial.png Graphic file (type png)
-<use Image/H1335_FRC_Raw_Axial.png>
-Package pdftex.def Info: Image/H1335_FRC_Raw_Axial.png  used on input line 361.
-(pdftex.def)             Requested size: 97.563pt x 64.35437pt.
-<Image/H1335_FRC_PCAInitial_Axial.png, id=215, 612.8496pt x 407.121pt>
-File: Image/H1335_FRC_PCAInitial_Axial.png Graphic file (type png)
-<use Image/H1335_FRC_PCAInitial_Axial.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAInitial_Axial.png  used on input line 372.
-(pdftex.def)             Requested size: 612.84808pt x 407.12001pt.
-File: Image/H1335_FRC_PCAInitial_Axial.png Graphic file (type png)
-<use Image/H1335_FRC_PCAInitial_Axial.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAInitial_Axial.png  used on input line 372.
-(pdftex.def)             Requested size: 97.563pt x 64.81145pt.
-<Image/H1335_FRC_PCAFissureDetection_Axial.png, id=217, 610.9224pt x 410.0118pt>
-File: Image/H1335_FRC_PCAFissureDetection_Axial.png Graphic file (type png)
-<use Image/H1335_FRC_PCAFissureDetection_Axial.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAFissureDetection_Axial.png  used on input line 383.
-(pdftex.def)             Requested size: 610.92091pt x 410.01079pt.
-File: Image/H1335_FRC_PCAFissureDetection_Axial.png Graphic file (type png)
-<use Image/H1335_FRC_PCAFissureDetection_Axial.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAFissureDetection_Axial.png  used on input line 383.
-(pdftex.def)             Requested size: 97.563pt x 65.47809pt.
-<Image/H1335_FRC_Raw_Coronal.png, id=219, 587.796pt x 451.4466pt>
-File: Image/H1335_FRC_Raw_Coronal.png Graphic file (type png)
-<use Image/H1335_FRC_Raw_Coronal.png>
-Package pdftex.def Info: Image/H1335_FRC_Raw_Coronal.png  used on input line 394.
-(pdftex.def)             Requested size: 587.79456pt x 451.44548pt.
-File: Image/H1335_FRC_Raw_Coronal.png Graphic file (type png)
-<use Image/H1335_FRC_Raw_Coronal.png>
-Package pdftex.def Info: Image/H1335_FRC_Raw_Coronal.png  used on input line 394.
-(pdftex.def)             Requested size: 97.563pt x 74.92633pt.
-<Image/H1335_FRC_PCAInitial_Coronal.png, id=221, 596.4684pt x 453.3738pt>
-File: Image/H1335_FRC_PCAInitial_Coronal.png Graphic file (type png)
-<use Image/H1335_FRC_PCAInitial_Coronal.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAInitial_Coronal.png  used on input line 405.
-(pdftex.def)             Requested size: 596.46695pt x 453.37268pt.
-File: Image/H1335_FRC_PCAInitial_Coronal.png Graphic file (type png)
-<use Image/H1335_FRC_PCAInitial_Coronal.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAInitial_Coronal.png  used on input line 405.
-(pdftex.def)             Requested size: 97.563pt x 74.15315pt.
-<Image/H1335_FRC_PCAFissureDetection_Coronal.png, id=223, 589.7232pt x 445.665pt>
-File: Image/H1335_FRC_PCAFissureDetection_Coronal.png Graphic file (type png)
-<use Image/H1335_FRC_PCAFissureDetection_Coronal.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAFissureDetection_Coronal.png  used on input line 416.
-(pdftex.def)             Requested size: 589.72176pt x 445.66391pt.
-File: Image/H1335_FRC_PCAFissureDetection_Coronal.png Graphic file (type png)
-<use Image/H1335_FRC_PCAFissureDetection_Coronal.png>
-Package pdftex.def Info: Image/H1335_FRC_PCAFissureDetection_Coronal.png  used on input line 416.
-(pdftex.def)             Requested size: 97.563pt x 73.72876pt.
- [307 <./Image/FissureDetection1.jpg> <./Image/FissureDetection2.jpg> <./Image/FissureDetection3.jpg> <./Image/FissureDe
-tection4.jpg> <./Image/FissureDetection5.jpg> <./Image/FissureDetection6.jpg>]
-<Image/QuanlititativeResult1.png, id=247, 123.8226pt x 79.497pt>
+ [304]
+[305 <./Image/LobeFitting2.png> <./Image/ProcrustedMeshes.png> <./Image/ProjectedLeftFissureMesh.png> <./Image/Projected
+RightFissureMesh.png>]
+<Image/WholeFissureDetection.jpg, id=167, 696.6828pt x 299.1978pt>
+File: Image/WholeFissureDetection.jpg Graphic file (type jpg)
+<use Image/WholeFissureDetection.jpg>
+Package pdftex.def Info: Image/WholeFissureDetection.jpg  used on input line 312.
+(pdftex.def)             Requested size: 454.36925pt x 195.12877pt.
+<Image/SegmentationResult.png, id=170, 494.3268pt x 390.258pt>
+File: Image/SegmentationResult.png Graphic file (type png)
+<use Image/SegmentationResult.png>
+Package pdftex.def Info: Image/SegmentationResult.png  used on input line 432.
+(pdftex.def)             Requested size: 384.47963pt x 303.53377pt.
+ [306] [307 <./Image/WholeFissureDetection.jpg> <./Image/SegmentationResult.png>]
+<Image/QuanlititativeResult1.png, id=192, 123.8226pt x 79.497pt>
 File: Image/QuanlititativeResult1.png Graphic file (type png)
 <use Image/QuanlititativeResult1.png>
-Package pdftex.def Info: Image/QuanlititativeResult1.png  used on input line 456.
+Package pdftex.def Info: Image/QuanlititativeResult1.png  used on input line 470.
 (pdftex.def)             Requested size: 123.82228pt x 79.4968pt.
 File: Image/QuanlititativeResult1.png Graphic file (type png)
 <use Image/QuanlititativeResult1.png>
-Package pdftex.def Info: Image/QuanlititativeResult1.png  used on input line 456.
-(pdftex.def)             Requested size: 102.44598pt x 65.77263pt.
-<Image/QuanlititativeResult2.png, id=249, 114.1866pt x 84.315pt>
+Package pdftex.def Info: Image/QuanlititativeResult1.png  used on input line 470.
+(pdftex.def)             Requested size: 112.19708pt x 72.03426pt.
+<Image/QuanlititativeResult2.png, id=194, 114.1866pt x 84.315pt>
 File: Image/QuanlititativeResult2.png Graphic file (type png)
 <use Image/QuanlititativeResult2.png>
-Package pdftex.def Info: Image/QuanlititativeResult2.png  used on input line 465.
+Package pdftex.def Info: Image/QuanlititativeResult2.png  used on input line 479.
 (pdftex.def)             Requested size: 114.18631pt x 84.31477pt.
 File: Image/QuanlititativeResult2.png Graphic file (type png)
 <use Image/QuanlititativeResult2.png>
-Package pdftex.def Info: Image/QuanlititativeResult2.png  used on input line 465.
-(pdftex.def)             Requested size: 92.68745pt x 68.44398pt.
-<Image/QuanlititativeResult3.png, id=251, 318.4698pt x 200.9106pt>
+Package pdftex.def Info: Image/QuanlititativeResult2.png  used on input line 479.
+(pdftex.def)             Requested size: 102.44598pt x 75.64992pt.
+<Image/QuanlititativeResult3.png, id=196, 318.4698pt x 200.9106pt>
 File: Image/QuanlititativeResult3.png Graphic file (type png)
 <use Image/QuanlititativeResult3.png>
-Package pdftex.def Info: Image/QuanlititativeResult3.png  used on input line 474.
+Package pdftex.def Info: Image/QuanlititativeResult3.png  used on input line 488.
 (pdftex.def)             Requested size: 318.46901pt x 200.9101pt.
 File: Image/QuanlititativeResult3.png Graphic file (type png)
 <use Image/QuanlititativeResult3.png>
-Package pdftex.def Info: Image/QuanlititativeResult3.png  used on input line 474.
-(pdftex.def)             Requested size: 117.08008pt x 73.86057pt.
- [308 <./Image/H1335_FRC_Raw_Sagittal.png> <./Image/H1335_FRC_PCAInitial_Sagittal.png> <./Image/H1335_FRC_PCAFissureDete
-ction_Sagittal.png> <./Image/H1335_FRC_Raw_Axial.png> <./Image/H1335_FRC_PCAInitial_Axial.png> <./Image/H1335_FRC_PCAFis
-sureDetection_Axial.png> <./Image/H1335_FRC_Raw_Coronal.png> <./Image/H1335_FRC_PCAInitial_Coronal.png> <./Image/H1335_F
-RC_PCAFissureDetection_Coronal.png> <./Image/QuanlititativeResult1.png> <./Image/QuanlititativeResult2.png> <./Image/Qua
-nlititativeResult3.png>] (SPIEPaper_Yuwen.bbl [309] [310])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 498.
-
-[311]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 498.
+Package pdftex.def Info: Image/QuanlititativeResult3.png  used on input line 488.
+(pdftex.def)             Requested size: 126.83116pt x 80.01025pt.
+ [308 <./Image/QuanlititativeResult1.png> <./Image/QuanlititativeResult2.png> <./Image/QuanlititativeResult3.png>] (SPIE
+Paper_Yuwen.bbl
+[309])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 512.
+ [310]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 512.
  (SPIEPaper_Yuwen.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 498.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 498.
-Package rerunfilecheck Info: File `SPIEPaper_Yuwen.out' has not changed.
-(rerunfilecheck)             Checksum: B419D65F04408E84975F8EC278DFBB5B;701.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 512.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 512.
 
 
-LaTeX Warning: There were multiply-defined labels.
+Package rerunfilecheck Warning: File `SPIEPaper_Yuwen.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 498.
+Package rerunfilecheck Info: Checksums for `SPIEPaper_Yuwen.out':
+(rerunfilecheck)             Before: B419D65F04408E84975F8EC278DFBB5B;701
+(rerunfilecheck)             After:  3CB6CD9ADD54F746592E137A4DDD1070;701.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 512.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 92 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6666 strings out of 492970
- 98143 string characters out of 3135854
- 194953 words of memory out of 3000000
- 10337 multiletter control sequences out of 15000+200000
+ 6545 strings out of 492970
+ 94422 string characters out of 3135854
+ 192625 words of memory out of 3000000
+ 10250 multiletter control sequences out of 15000+200000
  14337 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,9n,28p,3156b,473s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,28p,3112b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
@@ -609,9 +462,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fo
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SPIEPaper_Yuwen.pdf (11 pages, 7430957 bytes).
+Output written on SPIEPaper_Yuwen.pdf (10 pages, 3447915 bytes).
 PDF statistics:
- 388 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 350 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 
