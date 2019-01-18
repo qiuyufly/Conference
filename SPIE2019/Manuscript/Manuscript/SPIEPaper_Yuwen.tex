@@ -42,9 +42,9 @@ Automatic identification of pulmonary lobes from imaging is important in disease
 \section{INTRODUCTION}
 \label{sec:intro}  % \label{} allows reference to this section
 
-Human lungs are divided into five lobes which form distinct anatomical regions separated by fissures. Identification of these lobes in imaging is important for assessment of lung disease severity and treatment planning. The lobes act somewhat independently of each other with respect to respiratory function, thus many pulmonary diseases act at a lobar level\cite{ukil2009anatomy}. For example, emphysema \cite{jeffery1998structural}, postprimary tuberculosis \cite{leung1999pulmonary} and silicosis \cite{rees2007silica} usually affect the upper lobes, while idiopathic pulmonary fibrosis commonly presents in the lower lobes \cite{lin2015combined}. For clinical applications, identification of the pulmonary fissures can be an important step in the image-based study of lung function and disease: knowing the lobar distribution of pulmonary disease is beneficial for doctors to recognize pathogenesis and guide therapy (including surgical planning)\cite{van2010automatic}. Segmentation of lobes can also facilitate intra-patient image registration for localizing and tracking disease progression, since lobes are important structural landmarks \cite{lassen2011interactive}. However, the lobes are difficult to segment automatically as they can appear as faint or fuzzy lines in imaging, fissures can be incomplete on CT scans (even in healthy patients), and there is anatomical variation in lobe shape and size between individuals. This anatomical variation is usually associated with age, sex, height and body mass index (BMI)\cite{ross2010automatic, gulsun2006variability}. 
+Human lungs are divided into five lobes which form distinct anatomical regions separated by fissures. Identification of these lobes in imaging is important for assessment of lung disease severity and treatment planning. The lobes act somewhat independently of each other with respect to respiratory function, thus many pulmonary diseases act at a lobar level\cite{ukil2009anatomy}. For example, emphysema, postprimary tuberculosis and silicosis  usually affect the upper lobes, while idiopathic pulmonary fibrosis commonly presents in the lower lobes \cite{lin2015combined}. For clinical applications, identification of the pulmonary fissures can be an important step in the image-based study of lung function and disease: knowing the lobar distribution of pulmonary disease is beneficial for doctors to recognize pathogenesis and guide therapy (including surgical planning)\cite{van2010automatic}. Segmentation of lobes can also facilitate intra-patient image registration for localizing and tracking disease progression, since lobes are important structural landmarks \cite{lassen2011interactive}. However, the lobes are difficult to segment automatically as they can appear as faint or fuzzy lines in imaging, fissures can be incomplete on CT scans (even in healthy patients), and there is anatomical variation in lobe shape and size between individuals. This anatomical variation is usually associated with age, sex, height and body mass index (BMI)\cite{ross2010automatic}. 
 
-In a broad sense, existing algorithms that aim to automatically segment pulmonary lobes consist of two steps: lung segmentation and fissure detection. Lung segmentation methods are well-established and typically reliable\cite{hu2001automatic, ukil2005smoothing, sun20063d, pu2008adaptive, wang2009automated, sun2012automated}. In contrast, automated fissure detection is challenging, and currently no method has yet been demonstrated to be robust and effective across a wide range of clinical imaging parameters and pathology experienced in clinical practice. One class of proposed fissure detection methods (anatomical knowledge based analysis method) makes use of either local or global knowledge of lung anatomy, such as airway and vessel trees, to help with identifying fissures\cite{kuhnigk2005informatics, zhou2004automatic, saita2006algorithm, ukil2009anatomy, pu2009computational, lassen2010automatic, doel2012pulmonary, lassen2013automatic}. For example, there are typically no large vessels in the vicinity of lobar fissures, and the bronchi can be classified into five lobes using an edge detection method, so fissures should be located in the gaps between airway and vessel trees. These methods can be time consuming to execute as airways and blood vessels must be identified as an intermediate step. If the airways or vessels cannot be segmented – for example, due to tissue abnormalities or failure division of airway main branches, then these methods cannot complete the fissure segmentation. A second class of fissure detection method (shape based analysis method) makes use of gray-level information and shape information to detect the fissures \cite{wiemker2005unsupervised, van2008supervised, van2010automatic, ross2010automatic, kitasaka2006recognition, lassen2011interactive, doel2012pulmonary, lassen2013automatic, ross2013pulmonary}. Generally, lobar fissures can be regarded as bright planes crossing the pulmonary volume because of the higher density value of fissures compared to the surrounding tissues. Based on this information, several published methods use a local filtering algorithm to detect the voxels which lie on these planes, so that these detected voxel points can construct a continuous fissure surface. Moreover, some researches take advantage of both of these two methods, with combining anatomical information and gray-level information together for fissure detection\cite{ukil2009anatomy, doel2012pulmonary, lassen2013automatic}. However, these methods face problems when lobe fissures are blurry or incomplete. Algorithms have been proposed to detect incomplete fissures, such as fast matching method\cite{ukil2009anatomy}, thin plate spline (TPS)\cite{ross2013pulmonary} and $\beta$-spine smooth curve\cite{doel2012pulmonary}, which work by finding optimal fissure surfaces within regions of interest (ROIs). A further challenge for all segmentation methods is identifying the fissures in thin-slice CT that has large spacing between slices, and recognising fissures for scans containing physiologic abnormalities.
+In a broad sense, existing algorithms that aim to automatically segment pulmonary lobes consist of two steps: lung segmentation and fissure detection. Lung segmentation methods are well-established and typically reliable\cite{ukil2005smoothing, sun20063d, pu2008adaptive, wang2009automated, sun2012automated}. In contrast, automated fissure detection is challenging, and currently no method has yet been demonstrated to be robust and effective across a wide range of clinical imaging parameters and pathology experienced in clinical practice. One class of proposed fissure detection methods (anatomical knowledge based analysis method) makes use of either local or global knowledge of lung anatomy, such as airway and vessel trees, to help with identifying fissures\cite{kuhnigk2005informatics, saita2006algorithm, ukil2009anatomy, pu2009computational, lassen2010automatic, doel2012pulmonary, lassen2013automatic}. For example, there are typically no large vessels in the vicinity of lobar fissures, and the bronchi can be classified into five lobes using an edge detection method, so fissures should be located in the gaps between airway and vessel trees. These methods can be time consuming to execute as airways and blood vessels must be identified as an intermediate step. If the airways or vessels cannot be segmented – for example, due to tissue abnormalities or failure division of airway main branches, then these methods cannot complete the fissure segmentation. A second class of fissure detection method (shape based analysis method) makes use of gray-level information and shape information to detect the fissures \cite{van2008supervised, van2010automatic, ross2010automatic, lassen2011interactive, doel2012pulmonary, lassen2013automatic, ross2013pulmonary}. Generally, lobar fissures can be regarded as bright planes crossing the pulmonary volume because of the higher density value of fissures compared to the surrounding tissues. Based on this information, several published methods use a local filtering algorithm to detect the voxels which lie on these planes, so that these detected voxel points can construct a continuous fissure surface. Moreover, some researches take advantage of both of these two methods, with combining anatomical information and gray-level information together for fissure detection\cite{ukil2009anatomy, doel2012pulmonary, lassen2013automatic}. However, these methods face problems when lobe fissures are blurry or incomplete. Algorithms have been proposed to detect incomplete fissures, such as fast matching method\cite{ukil2009anatomy}, thin plate spline (TPS)\cite{ross2013pulmonary} and $\beta$-spine smooth curve\cite{doel2012pulmonary}, which work by finding optimal fissure surfaces within regions of interest (ROIs). A further challenge for all segmentation methods is identifying the fissures in thin-slice CT that has large spacing between slices, and recognising fissures for scans containing physiologic abnormalities.
 
 In this paper, we present a statistical finite element shape model-guided method to segment pulmonary lobes from CT images. This new procedure does not depend on prior segmentation of anatomical structures (airway lobar classification) and has promising potential as a clinically useful semi-automatic lobe segmentation procedure. Unlike 'deep learning' methods, this approach requires relatively few subject images as a training set. Development of this method was motivated by the poor reliability of existing methods for a guaranteed estimate of fissure location, particularly in volumetric images of abnormalities, or when only thin-slice CT (non-volumetric images) are available.
 
@@ -309,7 +309,7 @@ The detected points were then divided into a set of small subsections correspond
 
 \begin{figure}[htbp]
   \centering 
-  \includegraphics[height=2.7in]{Image/WholeFissureDetection.jpg}
+  \includegraphics[height=2.1in]{Image/WholeFissureDetection.jpg}
   \caption{Hessian-based multiscale fissure detection results. (a) Hessian-based plane-like structure enhancement filter. (b) Remove vessel voxels (tube-like structures). (c) Selected search regions for fissure detection based on SSM initial fissure prediction. (d) 2D and 3D eigenvector based connected component filter. (e) Fissure candidate points. (f) $\beta$-spline curve fissure surface fitting.}
   \label{fig:FissureDetection}
 \end{figure}
@@ -429,35 +429,14 @@ Figure \ref{fig:HLASegmentationResults} shows raw images, initial SSM based fiss
 
 \begin{figure}[htbp]
   \centering 
-  \includegraphics[height=4.2in]{Image/SegmentationResult.png}
+  \includegraphics[height=3.5in]{Image/SegmentationResult.png}
   \caption{Sagittal, axial, and coronal views illustrating raw image, SSM based initial fissure guessing and final automatic fissure detection results of a normal healthy subject. (a), (d), (g) are sagittal, axial and coronal raw images. (b), (e), (h) are sagittal, axial and coronal SSM based initial fissure guessing results. (c), (f), (i) are sagittal, axial and coronal automatic fissure detection results.}
   \label{fig:HLASegmentationResults}
 \end{figure}
 
-To allow for a quantitative evaluation of the performance in a healthy normal dataset and an IPF dataset, the automatic segmentation results were compared with ''gold-standard'' manual segmentations of the fissures. The ''gold-standard'' segmentations were acquired by an experienced researcher manually tracing all the three fissures for each subject by digitizing a series of points. Segmentation accuracy was quantitatively evaluated by computing the mean difference and percentage of fissure points $<$ 3 mm between the gold-standard and automatic method. The 3 mm criterion approximates the thickness of CT images routinely used clinically \cite{wei2009segmentation}. The segmentation accuracy of quantitative evaluation for normal and IPF subjects is shown in Table \ref{tab:QuantitativeResult}).
-
-\begin{table}[htbp]
-\centering
-\caption{Mean error and percentile accuracy of normal healthy and IPF subjects (mean value $\pm$ standard deviation).}
-\label{tab:QuantitativeResult}
-\begin{tabular}{| c | c | c | c | c |}
-\hline
-~ & \multicolumn{2}{|c|}{\bf{Normal healthy subjects}} & \multicolumn{2}{|c|}{\bf{IPF subjects}}\\ 
-\hline
-~ & Mean error (mm) & Accurancy (\%) & Mean error (mm) & Accurancy (\%)\\	
-\hline
-Left oblique & 1.76 $\pm$ 0.68 & 81.19 $\pm$ 6.61 & 2.82 $\pm$ 0.71 & 70.26 $\pm$ 9.10\\
-\hline
-Right horizontal & 3.66 $\pm$ 1.37 & 64.81 $\pm$ 13.19 & 5.39 $\pm$ 1.90 & 58.43 $\pm$ 14.53\\
-\hline
-Right oblique & 2.55 $\pm$ 0.90 & 73.81 $\pm$ 7.96 & 4.71 $\pm$ 1.60 & 62.86 $\pm$ 11.21\\						
-\hline
-\end{tabular}
-\end{table}
+To allow for a quantitative evaluation of the performance in a healthy normal dataset and an IPF dataset, the automatic segmentation results were compared with ''gold-standard'' manual segmentations of the fissures. The ''gold-standard'' segmentations were acquired by an experienced researcher manually tracing all the three fissures for each subject by digitizing a series of points. Segmentation accuracy was quantitatively evaluated by computing the mean difference and percentage of fissure points $<$ 3 mm between the gold-standard and automatic method. The 3 mm criterion approximates the thickness of CT images routinely used clinically \cite{wei2009segmentation}. The segmentation accuracy of quantitative evaluation for normal and IPF subjects is shown in Table \ref{tab:SSMQuantitativeResult}.
 
 Figure \ref{fig:QuanlititativeResult} shows the spatial distribution of error for three representative subjects. Error was highest in regions close to the hilum (where the anatomical structures are complex, and/or the fissure is often incomplete on CT), and where the right fissures meet. 
-
-To investigate the contribution of using the approximated lobe borders from the deformation of SSM, here the method is compared to two interactive watershed-based pulmonary lobe segmentation softwares: 1. Pulmonary Toolkit, PTK, https://github.com/tomdoel/pulmonarytoolkit; 2. Pulmonary Analysis Software Suite, PASS \cite{guo2008pulmonary}. Both of these softwares have a built-in lobe segmentation method which is guided by vessel tree and airway tree. The two segmentation softwares PASS and PTK tested for comparison were unable to segment the lobes for 9/20 and 7/20 subjects respectively (1/10 and 1/10 normal and 8/10 and 6/10 IPF subjects). In contrast, the model-based method gave an initial estimate for all subjects at all volumes. The main reason for the failure of segmentation is that the airway trees can't be segmented or labelled as lobar branches correctly.
 
 \begin{figure}[htbp] 
 \centering
@@ -492,11 +471,70 @@ To investigate the contribution of using the approximated lobe borders from the 
 \label{fig:QuanlititativeResult}
 \end{figure}
 
+To investigate the contribution of using the approximated lobe borders from the deformation of SSM, the method is compared to two interactive watershed-based pulmonary lobe segmentation softwares: 1. Pulmonary Toolkit, PTK, https://github.com/tomdoel/pulmonarytoolkit; 2. Pulmonary Analysis Software Suite, PASS \cite{guo2008pulmonary}. Both of these softwares have a built-in lobe segmentation method which is guided by vessel tree and airway tree. The two softwares PASS and PTK were unable to segment the lobes for 9/20 and 7/20 subjects respectively (1/10 and 1/10 normal and 8/10 and 6/10 IPF subjects). In contrast, the SSM-based method gave an initial estimate for all subjects at all volumes. The main reason for the failure of segmentation is that the airway trees can't be segmented or labelled as lobar branches correctly. The mean square error and percentile accuracy of each fissure for each subject segmented using PTK and PASS are listed in Table \ref{tab:PTKQuantitativeResult} and \ref{tab:PASSQuantitativeResult}. Although the SSM-based method was able to segment all the subjects (whereas PASS and PTK can't), PASS could sometimes perform better on some young healthy subjects. That is probably because in the healthy lungs, it is possible to extract airways and vessels accurately, therefore these structures are able to provide reliable anatomical information. The SSM-based method had lower error and higher percentage accuracy than PTK for all three fissures for both IPF and normal. Error and accuracy for the SSM-based method were similar to PASS for the healthy subjects, whereas error was much lower and accuracy higher for the SSM-based method applied to IPF data.
+
+\begin{table}[htbp]
+\centering
+\caption{Mean error and percentile accuracy of normal healthy and IPF subjects using SSM-based method (mean value $\pm$ standard deviation).}
+\label{tab:SSMQuantitativeResult}
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+~ & \multicolumn{2}{|c|}{\bf{Normal healthy subjects}} & \multicolumn{2}{|c|}{\bf{IPF subjects}}\\ 
+\hline
+~ & Mean error (mm) & Accurancy (\%) & Mean error (mm) & Accurancy (\%)\\	
+\hline
+Left oblique & 1.76 $\pm$ 0.68 & 81.19 $\pm$ 6.61 & 2.82 $\pm$ 0.71 & 70.26 $\pm$ 9.10\\
+\hline
+Right horizontal & 3.66 $\pm$ 1.37 & 64.81 $\pm$ 13.19 & 5.39 $\pm$ 1.90 & 58.43 $\pm$ 14.53\\
+\hline
+Right oblique & 2.55 $\pm$ 0.90 & 73.81 $\pm$ 7.96 & 4.71 $\pm$ 1.60 & 62.86 $\pm$ 11.21\\						
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Mean error and percentile accuracy of normal healthy and IPF subjects using PTK software (mean value $\pm$ standard deviation).}
+\label{tab:PTKQuantitativeResult}
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+~ & \multicolumn{2}{|c|}{\bf{Normal healthy subjects (1 fail)}} & \multicolumn{2}{|c|}{\bf{IPF subjects (6 fail)}}\\ 
+\hline
+~ & Mean error (mm) & Accurancy (\%) & Mean error (mm) & Accurancy (\%)\\	
+\hline
+Left oblique & 3.08$\pm$1.56 & 68.2$\pm$15.0 & 8.18$\pm$5.76 & 44.6$\pm$17.5\\
+\hline
+Right horizontal & 7.94$\pm$6.85 & 55.5$\pm$16.8 & 17.53$\pm$13.57 & 16.8$\pm$12.4\\
+\hline
+Right oblique & 4.56$\pm$2.78 & 56.5$\pm$10.9 & 8.91$\pm$5.10 & 36.6$\pm$15.4\\						
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Mean error and percentile accuracy of normal healthy and IPF subjects using PASS method (mean value $\pm$ standard deviation).}
+\label{tab:PASSQuantitativeResult}
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+~ & \multicolumn{2}{|c|}{\bf{Normal healthy subjects (1 fail)}} & \multicolumn{2}{|c|}{\bf{IPF subjects (8 fail)}}\\ 
+\hline
+~ & Mean error (mm) & Accurancy (\%) & Mean error (mm) & Accurancy (\%)\\	
+\hline
+Left oblique & 1.88$\pm$0.98 & 82.0$\pm$11.3 & 3.90$\pm$0.68 & 62.8$\pm$7.5\\
+\hline
+Right horizontal & 4.32$\pm$3.99 & 65.0$\pm$27.1 & 8.83$\pm$1.26 & 34.3$\pm$15.1\\
+\hline
+Right oblique & 2.23$\pm$1.35 & 82.7$\pm$13.7 & 19.87$\pm$20.76 & 38.3$\pm$25.0\\						
+\hline
+\end{tabular}
+\end{table}
+
 
 \section{DISCUSSION AND CONCLUSION}
-In this paper, a novel SSM-based pulmonary lobar segmentation method was presented and compared against two existing softwares (PTK and PASS). Results show that the method outperforms both PTK and PASS, perform well to detect the location of the fissures over most of the fissure surfaces on CT images from normal subjects. Due to lower imaging resolution and tissue abnormalities, the accuracy of the method was lower for the IPF subjects than the healthy subjects. However, the method was able to detect a fissure in each case, whereas existing research-focussed software can not, especially for the abnormal subjects. Automated segmentation of anatomical structures is still challenging in cases with abnormalities, however, the method did not fail, and it provides a robust basis for segmentation even in abnormal cohorts.
+In this paper, a novel pulmonary lobar segmentation method was presented and compared against two existing softwares (PTK and PASS). Results show that the method outperforms both PTK and PASS with respect to the proportion of subjects for whom a segmentation was possible, and the new method had lower error and higher percentage accuracy than both comparison softwares for IPF data. Segmentation error and accuracy for data from healthy subjects was similar to PASS, but outperformed PTK. Due to lower imaging resolution and tissue abnormalities, the accuracy of the method was lower for the IPF subjects than the healthy subjects. However, the method was able to detect a fissure in each case, whereas existing research-focussed software can not, especially for the abnormal subjects. Automated segmentation of anatomical structures is still challenging in cases with abnormalities, however, the method did not fail, and it provides a robust basis for segmentation even in abnormal cohorts.
 
-The new SSM-based method performed better on the left oblique fissure than the other two fissures, likely because the left lung has a simpler anatomic structure with only one fissure. In contrast, error detection happens more often in the area of the right lung where the two fissures come into contact. This is illustrated in Figure \ref{fig:QuanlititativeResult}, which shows the error distribution over the three fissures for three subjects. It can be seen that the method results in higher error in the lung boundary area, since the fissures here are commonly incomplete on CT scans, thus few fissure candidate points can be detected accurately. There is also a high error around the junction area of the right oblique fissure and right horizontal fissure, since the two fissures are too closed in this region and the search regions may overlap with each other.
+The new SSM-based method performed better on the left oblique fissure than the other two fissures, likely because the left lung has a simpler anatomic structure with only one fissure. In contrast, error detection happens more often in the area of the right lung where the two fissures come into contact. This is illustrated in Figure \ref{fig:QuanlititativeResult}, which shows the error distribution over the three fissures for three subjects. It can be seen that the method results in higher error in the lung boundary area, since the fissures here are commonly incomplete on CT scans, thus few fissure candidate points can be detected accurately. There is also a high error at the junction of the right oblique fissure and right horizontal fissure, since the two fissures are close in this region and the search regions may overlap with each other.
 
 In the new method, a SSM was used to provide an initial fissure estimate. Compared to the current published anatomical structure-based methods (PTK and PASS), the SSM-based method can predict the fissure location without requiring a preliminary analysis of other anatomical features other than lung shape. For example, traditional anatomical knowledge-based methods such as the watershed-based lobar segmentation relies on the success of the automatic segmentations of the vessel and airway tree and need to label the airway trees to the five main lobar bronchi to get an initial fissure approximation. When one of those segmentations fails, the method is likely to perform worse. Vessels are distributed all over the lung and due to the high contrast to the lung parenchyma, a good segmentation of the vessels is feasible.  But in some cases vessels cross the lobar boundaries. Thus, the assumption that there are no vessels at the lobar boundary is not always correct. Due to the complex radiological appearance of pathological lungs, it is usually difficult to get a reliable airway and vessel tree segmentation. In contrast, the new method is largely independent of the knowledge of lung anatomy, so in the comparison of the SSM-based estimation of fissure location with a watershed-based method, the latter failed for nearly half of the subjects. 
 %
